@@ -1,0 +1,11 @@
+<h1>Hello Admin User</h1>
+
+<p>
+   A new <%= @object.class.to_s %> has been created , Bellow is the details of object created.
+</p>
+
+<% @object.attributes.each do |attr_key,attr_value|%>
+ <p>  <strong> <%= attr_key %></strong>: <strong> <%= attr_value %></strong></p>
+<% end %>
+
+<h3> Thanks <br> Admin Team<h3>
